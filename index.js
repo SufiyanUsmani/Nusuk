@@ -3,7 +3,20 @@
  */
 
 import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import StackNavigator from './navigation/StackNavigator';
 
-AppRegistry.registerComponent(appName, () => App);
+const App = () => {
+  return (
+    <View>
+      <StackNavigator/>
+    </View>
+  )
+}
+
+export default App;
+
+const styles = StyleSheet.create({})
+
+AppRegistry.registerComponent("Nusuk", () => StackNavigator);
